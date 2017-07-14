@@ -1,0 +1,46 @@
+%YAML 1.0
+---
+label_space_side: 5
+
+use_gradients_unary: 1
+gaussian_smoothing_factor: 1.0
+gradients_weight: 1.0
+grad_kernel_size: 3
+grad_type: 601 #601 Sobel, 602 Scharr, 603 Laplacian, 604 Piotr
+grad_model_name_trained_detector: "/home/juan-manuel/bin/model.yml.gz"
+
+use_gradients_dt_unary: 0
+grad_dt_type: 604 #601 Sobel, 602 Scharr, 603 Laplacian, 604 Piotr
+grad_dt_model_name_trained_detector: "/home/juan-manuel/bin/model.yml.gz"
+
+use_gradient_pairwise: 0
+gradient_pairwise_weight: 1.0
+
+use_norm_pairwise: 1
+norm_weight: 1.0
+norm_type: 502 #501: L2_SQR, 502=L2
+
+use_temp_norm_pairwise: 0
+temp_norm_weight: 1
+temp_angle_weight: 0.0
+
+use_snapcut_pairwise: 1
+snapcut_region_height: 20.
+snapcut_sigma_color: 0.1
+snapcut_weight: 200.
+
+use_landmarks: 1
+max_number_landmarks: -1
+landmark_max_area_overlap: 5.0
+landmark_min_area: 100.0
+landmark_min_response: 0.25
+landmark_pairwise_weight: 0.0
+landmark_to_node_radius: 75.0
+landmark_to_node_weight: 1.0
+landmarks_searchspace_side: 39
+
+use_graphcut_term: 0
+
+use_green_theorem_term: 0
+green_theorem_weight: 0.5
+
