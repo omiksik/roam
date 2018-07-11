@@ -19,8 +19,6 @@ This is a source code of "ROAM: a Rich Object Appearance Model with Application 
 #include "Node.h"
 
 #include <opencv2/core.hpp>
-
-#include <opencv2/tracking.hpp>
 #include <opencv2/video.hpp>
 
 namespace ROAM
